@@ -6,7 +6,7 @@ Portable OBS Studio scene collection, profiles, and assets — shared across mac
 
 | Scene | Canvas | Description |
 |-------|--------|-------------|
-| **Scene Meetup** | 1920x1080 | Webcam + iPhone camera with rounded frame overlay + Agentic Coding Meetup header |
+| **Agentic Hamburg** | 1920x1080 | Webcam + iPhone camera with rounded frame overlay + Agentic Hamburg overlay |
 | **DL School** | 1920x1080 | iPhone camera + screen capture |
 | **Vertical Scene** | 1080x1920 | Vertical format for social media — webcam, iPhone, TreeOS logo |
 
@@ -62,7 +62,7 @@ Quit OBS before running import. You need to re-run import after every `git pull`
 
 ```
 assets/
-  meetup/              Scene-specific assets for meetup scenes
+  agentic-hamburg/     Overlays for Agentic Hamburg meetup
   shared/              Shared assets (logos, frames)
 scenes/
   Untitled.json        Scene collection (all scenes in one file)

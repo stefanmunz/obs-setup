@@ -30,11 +30,11 @@
         "monitoring_type": 0,
         "private_settings": {}
     },
-    "current_scene": "Scene Meetup",
-    "current_program_scene": "Scene Meetup",
+    "current_scene": "Agentic Hamburg",
+    "current_program_scene": "Agentic Hamburg",
     "scene_order": [
         {
-            "name": "Scene Meetup"
+            "name": "Agentic Hamburg"
         },
         {
             "name": "DL School"
@@ -44,7 +44,7 @@
     "sources": [
         {
             "prev_ver": 536870916,
-            "name": "Scene Meetup",
+            "name": "Agentic Hamburg",
             "uuid": "95e32ac7-2c7d-4d2b-ae13-b447665307a8",
             "id": "scene",
             "versioned_id": "scene",
@@ -218,7 +218,7 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "Agentic Coding Meetup Hamburg Header.png",
+                        "name": "Agentic Hamburg Overlay",
                         "source_uuid": "789ff01b-b923-41f4-8cf3-9cb12dfa77ce",
                         "visible": true,
                         "locked": false,
@@ -865,12 +865,12 @@
         },
         {
             "prev_ver": 536870916,
-            "name": "Agentic Coding Meetup Hamburg Header.png",
+            "name": "Agentic Hamburg Overlay",
             "uuid": "789ff01b-b923-41f4-8cf3-9cb12dfa77ce",
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "__HOME__/Library/Application Support/obs-studio/assets/meetup/agentic-coding-header.png"
+                "file": "__HOME__/Library/Application Support/obs-studio/assets/agentic-hamburg/video-overlay-teal-bg.png"
             },
             "mixers": 0,
             "sync": 0,

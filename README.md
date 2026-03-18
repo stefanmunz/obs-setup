@@ -25,8 +25,8 @@ cd ~/code/play/obs
 ```
 
 This will:
-- Create a symlink `~/obs-assets` pointing to the repo's `assets/` folder
-- Copy scene collection and profiles into `~/Library/Application Support/obs-studio/`
+- Copy assets into `~/Library/Application Support/obs-studio/assets/`
+- Copy scene collection and profiles into OBS's config directory
 - Expand all file paths for the current user's home directory
 
 After importing, open OBS and **re-select your hardware sources** in each scene (see [Limitations](#limitations)).
@@ -50,12 +50,12 @@ git pull
 ./import.sh
 ```
 
-Quit OBS before running import. If you only changed scene layouts (not assets), you can also just `git pull` — the `~/obs-assets` symlink means OBS picks up new/updated images automatically without re-importing.
+Quit OBS before running import. You need to re-run import after every `git pull` to update the scenes, profiles, and assets in OBS's config directory.
 
 ## Adding new assets
 
-1. Place images/media in the appropriate `assets/` subfolder (e.g. `assets/meetup/`, `assets/shared/`)
-2. In OBS, reference them via `~/obs-assets/...` — e.g. `~/obs-assets/shared/treeos-logo.png`
+1. Place images/media in the appropriate `assets/` subfolder in the repo (e.g. `assets/meetup/`, `assets/shared/`)
+2. In OBS, browse to `~/Library/Application Support/obs-studio/assets/...` when selecting images
 3. Export and commit
 
 ## Repo structure
@@ -69,8 +69,8 @@ scenes/
 profiles/
   Untitled/            Default profile
   Vertical_Video/      Profile for vertical recording (1080x1920, 60fps)
-import.sh              Repo → OBS
-export.sh              OBS → Repo
+import.sh              Repo -> OBS
+export.sh              OBS -> Repo
 ```
 
 ## Limitations

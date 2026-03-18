@@ -370,7 +370,7 @@
                     "id": "mask_filter",
                     "versioned_id": "mask_filter_v2",
                     "settings": {
-                        "image_path": "__HOME__/obs-assets/shared/webcam-frame.png",
+                        "image_path": "__HOME__/Library/Application Support/obs-studio/assets/shared/webcam-frame.png",
                         "stretch": false,
                         "type": "mask_alpha_filter.effect",
                         "color": 4293848814,
@@ -402,7 +402,7 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "__HOME__/obs-assets/shared/treeos-logo.png"
+                "file": "__HOME__/Library/Application Support/obs-studio/assets/shared/treeos-logo.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -870,7 +870,7 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "__HOME__/obs-assets/meetup/agentic-coding-header.png"
+                "file": "__HOME__/Library/Application Support/obs-studio/assets/meetup/agentic-coding-header.png"
             },
             "mixers": 0,
             "sync": 0,

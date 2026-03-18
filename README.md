@@ -67,8 +67,8 @@ assets/
 scenes/
   Untitled.json        Scene collection (all scenes in one file)
 profiles/
-  Untitled/            Default profile
-  Vertical_Video/      Profile for vertical recording (1080x1920, 60fps)
+  Landscape 1080p/     Landscape profile (1920x1080)
+  Vertical 1080p/      Vertical profile (1080x1920)
 import.sh              Repo -> OBS
 export.sh              OBS -> Repo
 ```

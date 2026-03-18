@@ -2,18 +2,13 @@
 
 Portable OBS Studio scene collection, profiles, and assets — shared across machines via Git.
 
-## How it works
+## Scenes
 
-OBS has two canvases running simultaneously — no need to switch profiles:
-
-| Canvas | Resolution | Scenes |
-|--------|-----------|--------|
-| **Main** | 1920x1080 | Agentic Hamburg, DL School |
-| **Vertical** | 1080x1920 | Vertical Scene |
-
-Each canvas has its own scenes with sources positioned for that resolution. You can output each canvas independently (e.g. stream landscape to YouTube while recording vertical for TikTok).
-
-To switch orientation, just select a scene on the other canvas — no profile switching needed.
+| Scene | Resolution | Description |
+|-------|-----------|-------------|
+| **Agentic Hamburg** | 1920x1080 | Webcam + iPhone camera with rounded frame overlay + Agentic Hamburg overlay |
+| **DL School** | 1920x1080 | iPhone camera + screen capture |
+| **Vertical Scene** | 1080x1920 | Vertical format — requires Aitum Vertical plugin (see below) |
 
 ## Setup on a new Mac
 
@@ -72,7 +67,7 @@ assets/
 scenes/
   Untitled.json        Scene collection (all scenes in one file)
 profiles/
-  Landscape 1080p/     Profile (1920x1080, used for both canvases)
+  Landscape 1080p/     Profile (1920x1080)
 import.sh              Repo -> OBS
 export.sh              OBS -> Repo
 ```
@@ -84,3 +79,11 @@ export.sh              OBS -> Repo
 - **Single scene collection.** OBS stores all scenes in one file (`Untitled.json`). There's no per-scene version control — any export overwrites the entire collection.
 - **Recording output paths.** The profile defaults to `~/Movies` for recordings. This is fine on macOS but may need adjusting on other setups.
 - **OBS must be closed** during import, otherwise OBS will overwrite the imported files when it quits.
+
+## Vertical video (optional)
+
+The "Vertical Scene" uses a second canvas at 1080x1920. OBS does not have native multi-canvas UI — you need the **Aitum Vertical** plugin (v1.6.2+, requires OBS 31.1+):
+
+https://obsproject.com/forum/resources/aitum-vertical.1715/
+
+Install the plugin, and the existing "Aitum Vertical" canvas configuration will be picked up automatically. Without the plugin, only the landscape scenes work.
